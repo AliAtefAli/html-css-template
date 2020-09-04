@@ -1,2 +1,2 @@
 # html-css-template
-This is simple template using only html, and css.
+This is a simple template using only html, and css.
