@@ -1,0 +1,454 @@
+/* MAIN RULEZ */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 85%
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.text {
+    font-size: 1.25rem;
+}
+
+/* -------------------------------------------- HEADER -------------------------------------*/
+header {
+    background-image: url('../img/img8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    min-height: 400px;
+    position: relative;
+}
+
+header .background {
+    background-color: rgba(0, 0, 0, .6);
+    min-height: 400px
+}
+
+/* -------------------------------------------- NAVBAR -------------------------------------*/
+header .navbar {
+    background-color: rgb(207, 31, 40);
+    display: flex;
+}
+
+header .navbar ul {
+    float: right;
+}
+
+header nav h1 {
+    padding: 15px;
+    float: left;
+    height: 60px;
+    color: #FFF;
+    border-radius: 3px;
+}
+header nav h1:hover {
+    background-color: #FFF;
+    color:  rgb(207, 31, 40);
+}
+header nav li {
+    display: inline-flex;
+    padding: 20px 15px;
+    list-style: none
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #EEE;
+    text-transform: uppercase
+}
+
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    cursor: pointer;
+    display: none;
+}
+
+header nav li:hover {
+    background-color: #FFF;
+    border-radius: 2px
+}
+
+header nav li:hover a {
+    color: rgb(207, 31, 40);
+}
+
+header h2 {
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    position: relative;
+    top: 50px
+}
+
+header h2 span {
+    color: #000
+}
+.toggle-content {
+    display: inline-flex;
+    float: right;
+    margin: 8px 0 0 0
+}
+
+.toggle-content span {
+    width: 80%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 2px auto
+}
+
+header nav label {
+    height: 45px;
+    width: 50px;
+    background-color: #dDd;
+    color: #000;
+    border-radius: 6px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    float: right;
+    flex-direction: column
+}
+header nav .toggle span {
+    width: 75%;
+    height: 6px;
+    margin: 3px 0;
+    background-color: #EEE;
+}
+#chk {
+    display: none
+}
+
+
+/* -------------------------------------------- Features -------------------------------------*/
+.features .items {
+    position: relative;
+    top: -150px;
+    margin: auto;
+    padding: 50px 50px 20px 50px;
+    text-align: center;
+    color: #FFF;
+}
+
+.features .items .item {
+    background: #7fc9d8;
+    border-radius: 15px 0px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 5px;
+}
+
+.features .items .item:nth-child(1) {
+    background: #ffc107;
+}
+
+.features .items .item:nth-child(2) {
+    background: #c82333;
+}
+
+.features .items .item:nth-child(3) {
+    background: #1e7e34;
+}
+
+.features .items .item i {
+    font-size: xx-large;
+    margin: 10px;
+    padding: 25px;
+    border: #FFF 1px solid;
+    border-radius: 50%;
+}
+
+.features .items .item:nth-child(2) i {
+    margin: 10px 5px;
+    padding: 25px 35px;
+
+}
+
+
+.features .items .item h2 {
+    padding-bottom: 30px;
+
+}
+
+.features .items .item p {
+    padding: 10px;
+
+}
+
+.features .items .item i {
+
+}
+
+/* -------------------------------------------- startup business -------------------------------------*/
+.startup h1 {
+    padding: 30px 20px;
+    font-size: 2rem;
+}
+
+.startup p {
+    padding: 20px;
+}
+.startup .btn {
+    display: block;
+    color: #000;
+    border: 1px #000 solid;
+    width: fit-content;
+    margin: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+.startup .btn:hover {
+    color: #FFF;
+    background-color: #000
+}
+/* -------------------------------------------- Recent projects -------------------------------------*/
+.recent-project {
+    text-align: center;
+    background-color: #333333;
+    color: #FFF;
+}
+
+.recent-project h1 {
+    padding: 25px;
+    font-size: 2.5rem;
+}
+
+.recent-project p {
+    padding: 25px;
+}
+/* -------------------------------------------- Cards -------------------------------------*/
+.cards {
+    text-align: center;
+}
+
+.cards .card {
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.cards img {
+    width: 100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.cards img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+
+/* -------------------------------------------- Footer -------------------------------------*/
+footer {
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+    color: #FFF;
+    /*font-size: 1.1em*/
+}
+
+footer span {
+    text-transform: uppercase
+}
+
+/* -------------------------------------------- MEDIA QUERY -------------------------------------*/
+/* --------------------------------------------  MEDIUM SCREEN -------------------------------------*/
+@media (min-width: 993px) {
+    .col-lg-3 {
+        width: 25%
+    }
+}
+
+/* MEDIUM SCREEN */ /*  col-md-6  max-width: 50%  */
+@media (min-width: 768px) and (max-width: 992px) {
+    header .navbar ul li {
+        padding: 5px;
+        background-color: darkgray
+    }
+
+    .col-md-6 {
+        width: 50%;
+        padding-bottom: 20px
+    }
+}
+
+/* SMALL SCREEN */
+@media (max-width: 992px) {
+    .show-menu-btn, .hide-menu-btn {
+        display: inline-flex;
+    }
+
+    .menu{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        background: #333;
+        right: 0;
+        top: -130%;
+        text-align: center;
+        padding: 85px 0px 0px 0px;
+        line-height: normal;
+        transition: 0.05s;
+    }
+
+    header .navbar ul li {
+        display: block
+    }
+
+    #chk:checked ~ .menu {
+        top: -30px
+        }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 70px;
+    }
+
+    .features .items {
+        top: -190px
+    }
+}
+/*--------------------------------------------------- Grid System ----------------------------------------------*/
+/* Grid */
+.row {
+    margin-right: -20px;
+}
+
+.col {
+    width: 100%;
+    float: left;
+    /*padding-right: 20px;*/
+    box-sizing: border-box;
+}
+
+.col-xs-11 {width: 91.662%}
+.col-xs-10 {width: 83.332%;}
+.col-xs-9 {width: 75%;}
+.col-xs-8 {width: 66.662%;}
+.col-xs-7 {width: 58.331%}
+.col-xs-6 {width: 50%;}
+.col-xs-5 {width: 41.662%}
+.col-xs-4 {width: 33.332%;}
+.col-xs-3 {width: 25%;}
+.col-xs-2 {width: 16.662%;}
+.col-xs-1 {width: 8.332%;}
+
+@media screen and (min-width: 768px) {
+
+    .row {
+        margin-right: -40px;
+    }
+
+    .col {
+        padding-right: 40px;
+    }
+
+    .col-sm-11 {width: 91.662%}
+    .col-sm-10 {width: 83.332%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-8 {width: 66.662%;}
+    .col-sm-7 {width: 58.331%}
+    .col-sm-6 {width: 50%;}
+    .col-sm-5 {width: 41.662%}
+    .col-sm-4 {width: 30%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-2 {width: 16.662%;}
+    .col-sm-1 {width: 8.332%;}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .col-md-11 {width: 91.662%}
+    .col-md-10 {width: 83.332%;}
+    .col-md-9 {width: 75%;}
+    .col-md-8 {width: 66.662%;}
+    .col-md-7 {width: 58.331%}
+    .col-md-6 {width: 50%;}
+    .col-md-5 {width: 41.662%}
+    .col-md-4 {width: 33.332%;}
+    .col-md-3 {width: 25%;}
+    .col-md-2 {width: 16.662%;}
+    .col-md-1 {width: 8.332%;}
+
+}
+@media screen and (min-width: 1280px) {
+
+    .col-lg-11 {width: 91.662%}
+    .col-lg-10 {width: 83.332%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-8 {width: 66.662%;}
+    .col-lg-7 {width: 58.331%}
+    .col-lg-6 {width: 50%;}
+    .col-lg-5 {width: 41.662%}
+    .col-lg-4 {width: 33.332%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-2 {width: 16.662%;}
+    .col-lg-1 {width: 8.332%;}
+
+}
+
+@media screen and (max-width: 1023px) {
+    .push-down-sm {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .push-down-sm {
+        margin-bottom: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #FFF;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.group:after {
+    clear: both;
+}
+
+.row,
+.group {
+    zoom: 1;
+}
